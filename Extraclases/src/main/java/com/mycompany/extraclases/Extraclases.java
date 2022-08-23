@@ -12,7 +12,11 @@ package com.mycompany.extraclases;
 public class Extraclases {
 
     public static void main(String[] args) {
-        abrelista2 a = new abrelista2();
-        a.setVisible(true);
+        java.awt.EventQueue.invokeLater(new Runnable(){
+            @Override
+            public void run(){
+                new principal().setVisible(true);
+            }           
+        });
     }
 }
